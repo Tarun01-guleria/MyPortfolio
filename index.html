@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cbccdac11a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/logo.png"
+            alt="logo-img"
+            class="logo"
+            height="60px"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Programmer/Developer/Designer</p>
+          <h1>
+            Hi, I'm <span>Tarun</span> <br />
+            Guleria From India ❤️
+          </h1>
+          <span class="auto-type"></span>
+          <button class="btn">MyResume</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------About-------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="userimg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello MySelf <strong>Tarun Singh Guleria</strong> and I am
+              Currently Pursuing B.Tech. in Computer science and Engineering
+              From Lovely Professional University Phagwara Punjab. I have good
+              <strong>Problem Solving Skills</strong> I am Quick learner
+              Hardworking . My Strengths are I can Adapt myself to any Situation
+              whenever required .My hobbies are playing Cricket , listning Music
+              and Travelling. My short term goal is to get a Job in reputed
+              Software Organisation Where I can learn new technologies and also
+              grow myself as an Individual. My long term goal is to hold good
+              Position in an organisation.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Tools')">Tools</p>
+              <p class="tab-links" onclick="opentab('Achievments')">
+                Achievments
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>C Programming</span></li>
+                <li><span>C++ Programming</span></li>
+                <li><span>Core Java</span></li>
+                <li><span>DataStructures</span></li>
+                <li><span>Algorithms</span></li>
+                <li><span>Sql</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>React</span></li>
+                <li><span>NodeJs</span></li>
+                <li><span>ExpressJs</span></li>
+                <li><span>MongoDB</span></li>
+                <li><span>ReactNative</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Tools">
+              <img src="images/GitImg.png" alt="toolimg1" class="tool" />
+              <img src="images/GitHubImg.png" alt="toolimg2" class="tool" />
+              <img src="images/pycharm.jpg" alt="toolimg3" class="tool" />
+              <img src="images/LinuxImg.webp" alt="toolimg4" class="tool" />
+              <img src="images/VsCodeImg.jpg" alt="toolimg5" class="tool" />
+            </div>
+            <div class="tab-contents" id="Achievments">
+              <li><span>5 🌟 on (HackerRank C++)</span></li>
+              <li><span>4 🌟 on (HackerRank C)</span></li>
+              <li><span>4 🌟 on (HackerRank Problem-Solving)</span></li>
+              <li><span>3 🌟 on CodeChef</span></li>
+              <li>
+                <span
+                  >300 + Coding problems Solved on Gfg (Geeks-For-Geeks)</span
+                >
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------ Services  ------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I have Good Knowldge of Web development I like building new
+              Projects I love building new features.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I have interset in UI as Well Ux design. I ❤️ designing beautiful
+              UI's .
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Web/App Design</h2>
+            <p>
+              I also Know responsive Web design and App Design which is one of
+              the most important aspect of UI design nowdays.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------Projects ----------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="p1" />
+            <div class="layer">
+              <h3>Tic Tac Toe</h3>
+              <p>
+                I have built Tic Tac Toe game using C++ Programming I have use
+                Backtracking Algorithm MinMax Through this algorithm Computer is
+                able to play the optimal moves.
+              </p>
+              <a
+                href="https://github.com/Tarun234-wq/TicTacToeC-/blob/main/TicTacToe.cpp"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="p2" />
+            <div class="layer">
+              <h3>Drum Kit</h3>
+              <p>
+                I also have built a simple Drum kit using HTML CSS and
+                JAVASCRIPT.
+              </p>
+              <a href="https://incomparable-beignet-623e94.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="p3" />
+            <div class="layer">
+              <h3>Dice Game</h3>
+              <p>I have also built one Dice Game using HTML CSS JAVASCRIPT.</p>
+              <a href="https://ornate-clafoutis-b9f315.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> guleriatarun672@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 8580574903</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/tarun-guleria-3486741ba/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/tarun.guleria.31/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/TarunGuleria01"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.facebook.com/tarun.guleria.568"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="number"
+                name="Number"
+                placeholder="Your PhoneNo"
+                required
+              />
+              <button type="submit" class="btn-contact btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        copytright &copy; Made with <i class="fa-solid fa-heart"></i> By Tarun
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- Link to sheet -->
+<!-- https://docs.google.com/spreadsheets/d/1Oi6m3D901QjMazskCqXQT6G12_kaIcKT-ZXlvb0pRw8/edit#gid=0 -->
